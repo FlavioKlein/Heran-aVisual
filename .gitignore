@@ -1,0 +1,8 @@
+﻿################################################################################
+# Este arquivo .gitignore foi criado automaticamente pelo Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/packages
+/WinFormHerancaVisual/bin
+/WinFormHerancaVisual/obj
