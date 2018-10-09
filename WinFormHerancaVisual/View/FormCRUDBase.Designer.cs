@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormCRUDBase));
             this.pnDados = new System.Windows.Forms.Panel();
             this.pnControles = new System.Windows.Forms.Panel();
@@ -42,7 +43,9 @@
             this.BTEditar = new System.Windows.Forms.Button();
             this.BTIncluir = new System.Windows.Forms.Button();
             this.BTConsultar = new System.Windows.Forms.Button();
+            this.bsDados = new System.Windows.Forms.BindingSource(this.components);
             this.pnControles.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bsDados)).BeginInit();
             this.SuspendLayout();
             // 
             // pnDados
@@ -70,16 +73,16 @@
             this.pnControles.Controls.Add(this.BTIncluir);
             this.pnControles.Controls.Add(this.BTConsultar);
             this.pnControles.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnControles.Location = new System.Drawing.Point(846, 0);
+            this.pnControles.Location = new System.Drawing.Point(837, 0);
             this.pnControles.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.pnControles.Name = "pnControles";
-            this.pnControles.Size = new System.Drawing.Size(154, 562);
+            this.pnControles.Size = new System.Drawing.Size(163, 562);
             this.pnControles.TabIndex = 3;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(11, 382);
+            this.label2.Location = new System.Drawing.Point(14, 382);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(80, 20);
@@ -88,7 +91,7 @@
             // 
             // MTBDataAlteracao
             // 
-            this.MTBDataAlteracao.Location = new System.Drawing.Point(11, 406);
+            this.MTBDataAlteracao.Location = new System.Drawing.Point(14, 406);
             this.MTBDataAlteracao.Margin = new System.Windows.Forms.Padding(4);
             this.MTBDataAlteracao.Mask = "00/00/0000";
             this.MTBDataAlteracao.Name = "MTBDataAlteracao";
@@ -101,7 +104,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(11, 321);
+            this.label1.Location = new System.Drawing.Point(14, 321);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(77, 20);
@@ -110,7 +113,7 @@
             // 
             // MTBDataCadastro
             // 
-            this.MTBDataCadastro.Location = new System.Drawing.Point(11, 345);
+            this.MTBDataCadastro.Location = new System.Drawing.Point(14, 345);
             this.MTBDataCadastro.Margin = new System.Windows.Forms.Padding(4);
             this.MTBDataCadastro.Mask = "00/00/0000";
             this.MTBDataCadastro.Name = "MTBDataCadastro";
@@ -124,7 +127,7 @@
             // 
             this.BTSair.Image = ((System.Drawing.Image)(resources.GetObject("BTSair.Image")));
             this.BTSair.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BTSair.Location = new System.Drawing.Point(11, 276);
+            this.BTSair.Location = new System.Drawing.Point(14, 276);
             this.BTSair.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.BTSair.Name = "BTSair";
             this.BTSair.Size = new System.Drawing.Size(132, 32);
@@ -137,7 +140,7 @@
             // 
             this.BTExcluir.Image = ((System.Drawing.Image)(resources.GetObject("BTExcluir.Image")));
             this.BTExcluir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BTExcluir.Location = new System.Drawing.Point(11, 234);
+            this.BTExcluir.Location = new System.Drawing.Point(14, 234);
             this.BTExcluir.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.BTExcluir.Name = "BTExcluir";
             this.BTExcluir.Size = new System.Drawing.Size(132, 32);
@@ -150,7 +153,7 @@
             // 
             this.BTSalvar.Image = ((System.Drawing.Image)(resources.GetObject("BTSalvar.Image")));
             this.BTSalvar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BTSalvar.Location = new System.Drawing.Point(11, 149);
+            this.BTSalvar.Location = new System.Drawing.Point(14, 149);
             this.BTSalvar.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.BTSalvar.Name = "BTSalvar";
             this.BTSalvar.Size = new System.Drawing.Size(132, 32);
@@ -163,7 +166,7 @@
             // 
             this.BTCancelar.Image = ((System.Drawing.Image)(resources.GetObject("BTCancelar.Image")));
             this.BTCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BTCancelar.Location = new System.Drawing.Point(11, 191);
+            this.BTCancelar.Location = new System.Drawing.Point(14, 191);
             this.BTCancelar.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.BTCancelar.Name = "BTCancelar";
             this.BTCancelar.Size = new System.Drawing.Size(132, 32);
@@ -176,7 +179,7 @@
             // 
             this.BTEditar.Image = ((System.Drawing.Image)(resources.GetObject("BTEditar.Image")));
             this.BTEditar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BTEditar.Location = new System.Drawing.Point(11, 106);
+            this.BTEditar.Location = new System.Drawing.Point(14, 106);
             this.BTEditar.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.BTEditar.Name = "BTEditar";
             this.BTEditar.Size = new System.Drawing.Size(132, 32);
@@ -189,7 +192,7 @@
             // 
             this.BTIncluir.Image = ((System.Drawing.Image)(resources.GetObject("BTIncluir.Image")));
             this.BTIncluir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BTIncluir.Location = new System.Drawing.Point(11, 64);
+            this.BTIncluir.Location = new System.Drawing.Point(14, 64);
             this.BTIncluir.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.BTIncluir.Name = "BTIncluir";
             this.BTIncluir.Size = new System.Drawing.Size(132, 32);
@@ -202,7 +205,7 @@
             // 
             this.BTConsultar.Image = ((System.Drawing.Image)(resources.GetObject("BTConsultar.Image")));
             this.BTConsultar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BTConsultar.Location = new System.Drawing.Point(10, 11);
+            this.BTConsultar.Location = new System.Drawing.Point(13, 11);
             this.BTConsultar.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.BTConsultar.Name = "BTConsultar";
             this.BTConsultar.Size = new System.Drawing.Size(132, 32);
@@ -224,6 +227,7 @@
             this.Text = "FormCRUDBase";
             this.pnControles.ResumeLayout(false);
             this.pnControles.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bsDados)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -243,5 +247,6 @@
         protected System.Windows.Forms.MaskedTextBox MTBDataAlteracao;
         protected System.Windows.Forms.Label label1;
         protected System.Windows.Forms.MaskedTextBox MTBDataCadastro;
+        protected System.Windows.Forms.BindingSource bsDados;
     }
 }

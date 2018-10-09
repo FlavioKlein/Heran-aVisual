@@ -135,6 +135,7 @@
     <None Include="Properties\DataSources\WindowsFormsApp1.Model.PedidoItem.datasource" />
     <None Include="Properties\DataSources\WindowsFormsApp1.Model.Produto.datasource" />
     <None Include="Properties\DataSources\WindowsFormsApp1.Model.SisDBContext.datasource" />
+    <None Include="Properties\DataSources\WinFormHerancaVisual.Model.Cliente.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

@@ -35,9 +35,12 @@ namespace WinFormHerancaVisual.View
 
         protected virtual void BTConsultar_Click(object sender, EventArgs e)
         {
-            MTBDataCadastro.Text = objAtual.DataCadastro.ToShortDateString();
-            MTBDataAlteracao.Text = objAtual.DataAlteracao.ToShortDateString();
-            BTEditar.Focus();
+            if (objAtual != null)
+            {
+                MTBDataCadastro.Text = objAtual.DataCadastro.ToShortDateString();
+                MTBDataAlteracao.Text = objAtual.DataAlteracao.ToShortDateString();
+                BTEditar.Focus();
+            }           
         }
 
         protected virtual void BTIncluir_Click(object sender, EventArgs e)

@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.label3 = new System.Windows.Forms.Label();
             this.tbID = new System.Windows.Forms.TextBox();
             this.tbNome = new System.Windows.Forms.TextBox();
@@ -37,7 +36,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.cbSexo = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.bsDados = new System.Windows.Forms.BindingSource(this.components);
             this.pnDados.SuspendLayout();
             this.pnControles.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bsDados)).BeginInit();
@@ -55,30 +53,66 @@
             this.pnDados.Controls.Add(this.label3);
             this.pnDados.Size = new System.Drawing.Size(740, 531);
             // 
+            // BTSair
+            // 
+            this.BTSair.Location = new System.Drawing.Point(10, 276);
+            // 
+            // BTExcluir
+            // 
+            this.BTExcluir.Location = new System.Drawing.Point(10, 234);
+            // 
+            // BTSalvar
+            // 
+            this.BTSalvar.Location = new System.Drawing.Point(10, 149);
+            // 
+            // BTCancelar
+            // 
+            this.BTCancelar.Location = new System.Drawing.Point(10, 191);
+            // 
+            // BTEditar
+            // 
+            this.BTEditar.Location = new System.Drawing.Point(10, 106);
+            // 
+            // BTIncluir
+            // 
+            this.BTIncluir.Location = new System.Drawing.Point(10, 64);
+            // 
+            // BTConsultar
+            // 
+            this.BTConsultar.Location = new System.Drawing.Point(9, 11);
+            // 
             // pnControles
             // 
-            this.pnControles.Location = new System.Drawing.Point(586, 0);
-            this.pnControles.Size = new System.Drawing.Size(154, 531);
+            this.pnControles.Location = new System.Drawing.Point(584, 0);
+            this.pnControles.Size = new System.Drawing.Size(156, 531);
             // 
             // label2
             // 
+            this.label2.Location = new System.Drawing.Point(10, 382);
             this.label2.TabIndex = 9;
             // 
             // MTBDataAlteracao
             // 
             this.MTBDataAlteracao.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsDados, "DataAlteracao", true));
+            this.MTBDataAlteracao.Location = new System.Drawing.Point(10, 406);
             this.MTBDataAlteracao.Margin = new System.Windows.Forms.Padding(5);
             this.MTBDataAlteracao.TabIndex = 10;
             // 
             // label1
             // 
+            this.label1.Location = new System.Drawing.Point(10, 321);
             this.label1.TabIndex = 7;
             // 
             // MTBDataCadastro
             // 
             this.MTBDataCadastro.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsDados, "DataCadastro", true));
+            this.MTBDataCadastro.Location = new System.Drawing.Point(10, 345);
             this.MTBDataCadastro.Margin = new System.Windows.Forms.Padding(5);
             this.MTBDataCadastro.TabIndex = 8;
+            // 
+            // bsDados
+            // 
+            this.bsDados.DataSource = typeof(WinFormHerancaVisual.Model.Cliente);
             // 
             // label3
             // 
@@ -164,10 +198,6 @@
             this.label6.TabIndex = 6;
             this.label6.Text = "Sexo";
             // 
-            // bsDados
-            // 
-            this.bsDados.DataSource = typeof(WinFormHerancaVisual.Model.Cliente);
-            // 
             // FormCRUDCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
@@ -194,6 +224,5 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox tbID;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.BindingSource bsDados;
     }
 }

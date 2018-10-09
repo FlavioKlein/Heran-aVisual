@@ -43,6 +43,7 @@ namespace WinFormHerancaVisual
         {
             if (textFiltro.Text != "")
             {
+
                 if (cbCampo.SelectedIndex == 0)
                 {
                     int codigo = int.Parse(textFiltro.Text, 0);
@@ -53,10 +54,14 @@ namespace WinFormHerancaVisual
                 {
                     string comandoSQL = MontaConsulta();
                     listaCliente = sisDBContext.Cliente.SqlQuery(comandoSQL).ToList();
-                }
-                dataGridViewClientes.DataSource = listaCliente;
-                dataGridViewClientes.Refresh();
+                }              
             }
+            else
+            {
+                listaCliente = (from Cliente in sisDBContext.Cliente select Cliente).ToList();
+            }
+            dataGridViewClientes.DataSource = listaCliente;
+            dataGridViewClientes.Refresh();
         }
 
         private string MontaConsulta()
@@ -68,7 +73,7 @@ namespace WinFormHerancaVisual
             switch (cbTipoFiltro.SelectedIndex)
             {
                 case 0:
-                    parametro = "'%" + textFiltro.Text + "%'";
+                    parametro = "'%" + textFiltro.Text + "%'";                    
                     break;
                 case 1:
                     parametro = "'" + textFiltro.Text + "%'";
