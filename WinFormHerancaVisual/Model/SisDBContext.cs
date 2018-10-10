@@ -10,12 +10,14 @@ namespace WinFormHerancaVisual.Model
 
         public DbSet<Cliente> Cliente { get; set; }
         public DbSet<Produto> Produto { get; set; }
+        public DbSet<GrupoProduto> GrupoProduto { get; set; }
 
-    
         //protected override void OnModelCreating(ModelBuilder modelBuilder)
         //{
-        //    modelBuilder.Entity<Cliente>();
+        //    modelBuilder.Entity<Cliente>()
+        //        .ToTable("Cliente");
         //}
+
 
 
     }

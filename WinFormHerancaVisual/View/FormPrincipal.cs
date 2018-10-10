@@ -83,5 +83,17 @@ namespace WinFormHerancaVisual
         {
             clienteToolStripMenuItem_Click(sender, e);
         }
+
+        private void grupoDeProdutosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormCRUDGrupoProduto umFormCRUDGrupoProduto = new FormCRUDGrupoProduto(sisDBContext);
+            umFormCRUDGrupoProduto.MdiParent = this;
+            umFormCRUDGrupoProduto.Show();
+        }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            grupoDeProdutosToolStripMenuItem_Click(sender, e);
+        }
     }
 }
